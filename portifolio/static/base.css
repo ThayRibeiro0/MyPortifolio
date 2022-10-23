@@ -22,18 +22,67 @@ span {
     color: #fa9b92;
 }
 
+header {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
 
+header .logo{
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li{
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a{
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active
+{
+  background: #fff;
+  color: #2b1055;
+}
+
+
+
+
+/* 
 .btn-rounded{
     width: 40px;
     height: 40px;
     border-radius: 20px;
     margin-bottom: 10px;
     border: none;
+    display: flex;
     padding: 8px;
     align-items: center;
-    display: flex;
     overflow: hidden;
-    transition: 355ms;
+    transition: 255ms;
     cursor: pointer;
     
   }
@@ -53,7 +102,7 @@ span {
   
   nav:hover{
     background-color: rgb(255, 255, 255);
-    box-shadow: 4px 0px 10px 0px black;
+    box-shadow: 4px 8px 10px 0px black;
   }
   
   .btn-menu{
@@ -71,6 +120,9 @@ span {
   
   @media(max-width: 622px){
     nav:hover{
+      left: 0;
+    }
+    nav.open{
       left: 0;
     }
     nav {
@@ -92,11 +144,7 @@ span {
     }
   }
   
-  .btn-rounded:hover {
-    width: 90px;
-  }
-  
-  .btn-rounded i{
+  button.btn-rounded i{
     margin-right: 12px;
   }
   
@@ -104,7 +152,7 @@ span {
     color: #fff;
   }
   
-  [red]{
+  button[red]{
     background-color: red!important;
   }
   
@@ -117,6 +165,7 @@ span {
   [green]{
     background-color: green!important;
   }
+ */
 
 .content{
     position: absolute;
