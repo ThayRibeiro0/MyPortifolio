@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(//db.onlinewebfonts.com/c/229a57bbeef591e04a1fdfe347c90864?family=Centra+No2);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Centra, sans-serif;
+    
+}
+
+body {
+    background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+
+span {
+    color: #fa9b92;
+}
+
+
+.btn-rounded{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: none;
+    padding: 8px;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    transition: 355ms;
+    cursor: pointer;
+    
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    transition: 255ms;
+    padding: 14px;
+  }
+  
+  nav:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 0px 10px 0px black;
+  }
+  
+  .btn-menu{
+    margin: 6px;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    cursor: pointer;
+    right: 0;
+    background-color: #fafafa;
+    border-radius: 40px;
+    user-select: none;
+  }
+  
+  @media(max-width: 622px){
+    nav:hover{
+      left: 0;
+    }
+    nav {
+      left: -100%;
+      background-color: rgba(255, 255, 255, 0.5);
+      width: 250px;
+    }
+     .btn-rounded {
+        width: 100%;
+      }
+  }
+  
+  @media (min-width: 622px){
+    .btn-rounded:hover {
+        width: 90px;
+     }
+    .btn-menu {
+      display: none;
+    }
+  }
+  
+  .btn-rounded:hover {
+    width: 90px;
+  }
+  
+  .btn-rounded i{
+    margin-right: 12px;
+  }
+  
+  button[txt-white] {
+    color: #fff;
+  }
+  
+  [red]{
+    background-color: red!important;
+  }
+  
+  
+  [blue]{
+    background-color: blue!important;
+  }
+  
+  
+  [green]{
+    background-color: green!important;
+  }
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translateY(-50%);
+}
+
+h1{
+    color: #fff;
+    font-size: 65px;
+    margin-bottom: 50px;
+}
+
+h3 {
+    color: #fff;
+    font-size: 45px;
+    margin-top: 80px;
+    margin-bottom: -10px;
+}
+
+h4 {
+    color: #fcfc;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+#btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff ;
+    color: #261b1a;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+}
+
+div.caixa {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Centra, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 12%;
+   
+}
+
+div.content {
+    margin-top: 2%;
+    margin-left: 80px ;
+}
+
+div.circle {
+    display: flex;
+    margin-left: 600px ;
+    width: 500px;
+    height: 530px;
+    border-radius: 200px;
+    overflow: hidden;
+}
+
+div.content1 {
+    margin-left: -100px ;
+    margin-top: 190px;
+    
+}
+
+video1 {
+    border-radius: 100px;
+    width: 100px;
+}
