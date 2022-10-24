@@ -11,30 +11,44 @@
     <script src="https://livejs.com/live.js"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+    
     
     <title>{% block title %}Home{% endblock%}</title>
   
   </head>
 <body>
-  <header>
-    <a hef="#" class="logo"> TMR</a>
+  <header id="header" class="d-flex-column justify-content-center">
+    <!-- <a hef="#" class="logo"> TMR</a> -->
+    <nav id="navbar" class="navbar nav-menu">
+      
       <!-- <img src="../static/academia.png" alt="logo" class="logo"/> -->
       
       <ul class="links">
         <li>
-          <a class="nav-item nav-link active" id="login" href="/">Home</a>
+          <a class="nav-item nav-rounded nav-link active" title="Home" red txt-white id="login" href="/">
+            <i class="material-icons" >home</i>
+          </a>
         </li>
         <li>
-          <a class="nav-item nav-link" id="login" href="/about">About</a>
+          <a class="nav-item nav-rounded nav-link" title="About" red txt-white id="login" href="/about">
+            <i class="material-icons">person</i>
+          </a>
         </li>
         <li>
-          <a class="nav-item nav-link" id="login" href="/experiences">Experiences</a>
+          <a class="nav-item nav-rounded nav-link" title="Experiences" txt-white id="login" href="/experiences">
+            <i class="material-icons">work</i>
+          </a>
         </li>
         <li>
-          <a class="nav-item nav-link" id="login" href="/skills">Skills</a>
+          <a class="nav-item nav-rounded nav-link" title="Skills" txt-white id="login" href="/skills">
+            <i class="material-icons">note</i>
+          </a>
         </li>
         <li>
-          <a class="nav-item nav-link" id="login" href="/contact">Contact</a>
+          <a class="nav-item nav-rounded nav-link" title="Contact" txt-white id="login" href="/contact">
+            <i class="material-icons">call</i>
+          </a>
         </li>
       </ul>
     </header>

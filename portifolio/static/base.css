@@ -22,7 +22,7 @@ span {
     color: #fa9b92;
 }
 
-header {
+/* header {
   position:absolute;
   top: 0;
   left: 0;
@@ -32,7 +32,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 10000;
-}
+} */
 
 header .logo{
   color: #fff;
@@ -43,7 +43,7 @@ header .logo{
   letter-spacing: 2px;
 }
 
-header ul{
+/* header ul{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,6 +59,7 @@ header ul li a{
   padding: 6px 15px;
   color: #fff;
   border-radius: 20px;
+  font-size: 20px;
 }
 
 header ul li a:hover,
@@ -66,9 +67,101 @@ header ul li a.active
 {
   background: #fff;
   color: #2b1055;
+} */
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  transition: 255ms;
+  padding: 14px;
+}
+
+.nav-menu {
+  padding: 0;
+  display: block;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu>ul>li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover>a {
+  color: rgb(249, 242, 242);
+  background: #2a130f;
+}
+
+.nav-menu a i, .nav-menu a:focus i {
+  font-size: 30px;
+}
+
+.nav-menu .active span, .nav-menu .active:focus span, .nav-menu li:hover>a span {
+  color: #fff;
+}
+
+.nav-rounded{
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  border: none;
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  overflow: hidden;
+  transition: 255ms;
+  cursor: pointer;
+  
 }
 
 
+/* nav:hover{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 8px 10px 0px black;
+} */
+
+.nav-menu{
+  margin: 6px;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  cursor: pointer;
+  right: 0;
+  background-color: transparent;
+  border-radius: 40px;
+  user-select: none;
+}
+ 
+nav ul li a {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color:#fff;
+}
 
 
 /* 
@@ -221,12 +314,12 @@ div.caixa {
 
 div.content {
     margin-top: 2%;
-    margin-left: 80px ;
+    margin-left: 120px ;
 }
 
 div.circle {
     display: flex;
-    margin-left: 600px ;
+    margin-left: 550px ;
     width: 500px;
     height: 530px;
     border-radius: 200px;
@@ -234,12 +327,13 @@ div.circle {
 }
 
 div.content1 {
-    margin-left: -100px ;
+    margin-left: -180px ;
     margin-top: 190px;
     
 }
 
 video1 {
     border-radius: 100px;
-    width: 100px;
+    width: 70px;
 }
+
