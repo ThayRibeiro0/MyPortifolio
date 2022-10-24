@@ -16,6 +16,7 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
     margin: 0;
+    border: 1px solid purple;
 }
 
 span {
@@ -33,15 +34,6 @@ span {
   align-items: center;
   z-index: 10000;
 } */
-
-header .logo{
-  color: #fff;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
 
 /* header ul{
   display: flex;
@@ -78,6 +70,7 @@ header ul li a.active
   transition: all 0.5s;
   padding: 15px;
   overflow-y: auto;
+  border: 1px solid pink
 }
 
 nav {
@@ -91,6 +84,7 @@ nav {
   width: 40px;
   transition: 255ms;
   padding: 14px;
+  border: 1px solid purple
 }
 
 .nav-menu {
@@ -265,6 +259,7 @@ nav ul li a {
     top: 50%;
     left: 4%;
     transform: translateY(-50%);
+    
 }
 
 h1{
@@ -297,43 +292,54 @@ h4 {
     font-size: 1.5em;
     z-index: 9;
     transform: translateY(100px);
+    font-family: Centra, sans-serif;
+    font-weight: bold;
 }
 
 div.caixa {
     margin: 0;
     padding: 0;
+    display: flex;
     box-sizing: border-box;
     font-family: Centra, sans-serif;
-    display: flex;
     justify-content: space-around;
     flex-direction: row;
     width: 100%;
     margin-top: 12%;
+    border: 1px solid gray
    
 }
 
 div.content {
-    margin-top: 2%;
     margin-left: 120px ;
+    float: left;
+    border: 1px solid red
+
 }
 
 div.circle {
     display: flex;
     margin-left: 550px ;
-    width: 500px;
-    height: 530px;
-    border-radius: 200px;
+    border-radius: 280px;
     overflow: hidden;
+    float: left;
+    float: center;
+    border: 1px solid blue
 }
 
 div.content1 {
+    float: center;
     margin-left: -180px ;
     margin-top: 190px;
+    box-sizing: border-box;
+    border: 1px solid green;
+    letter-spacing: 1px;
+
     
 }
 
-video1 {
+video {
     border-radius: 100px;
-    width: 70px;
+    width: 400px;
 }
 
