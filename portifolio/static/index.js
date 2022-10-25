@@ -1,8 +1,8 @@
-alert('Hello World');
+alert('Welcome to my Portifolio');
 
-// function togglenav() {
-//     $('nav').toggleClass('open')
-// }
+function togglenav() {
+    $('nav').toggleClass('open')
+}
 
 var typed = new Typed(".auto-type", {
     strings: ["Lawyer", "Systems Developer", "Administrator", "Lawyer"],
