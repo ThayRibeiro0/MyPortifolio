@@ -19,7 +19,6 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
     margin: 0;
-    border: 1px solid purple;
 }
 
 /* header */
@@ -32,7 +31,6 @@ body {
   transition: all 0.5s;
   padding: 15px;
   overflow-y: auto;
-  border: 1px solid pink
 }
 
 nav {
@@ -41,11 +39,11 @@ nav {
   justify-content: center;
   position: fixed;
   left: 0;
+  width: 0;
   top: 0;
   bottom: 0;
   transition: 255ms;
   padding: 14px;
-  border: 1px solid purple;
 }
 
 .nav-menu {
@@ -190,13 +188,13 @@ nav ul li a:hover {
   }
 
   div.col-1 h1{
-    font-size: 30px;
+    font-size: 65px;
   }
   div.col-1 h4 {
     font-size: 20px;
   }
   div.col-3 h3 {
-    font-size: 30px;
+    font-size: 45px;
     float: right;
   }
 }
@@ -232,7 +230,6 @@ div.col-1 {
   position: relative;
   flex-basis: 33.33%;
   margin-left: 10% ;
-  border: 1px solid red;
 
 }
 
@@ -258,20 +255,18 @@ div.col-2 {
   flex-basis: 33.33%;
   display: flex;
   align-items: center;
-  border: 1px solid blue
 }
 
 div.col-2 .video {
   position: relative;
   border-radius: 300px;
-  width: 100%;
+  width: 90%;
 }
 
 div.col-3 {
   position: relative;
   flex-basis: 34.33%;
-  margin-right: 8%;
-  border: 1px solid green;    
+  margin-right: 8%;  
 }
 
 .col-3 h3 {
