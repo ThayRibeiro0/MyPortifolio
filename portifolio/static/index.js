@@ -1,5 +1,3 @@
-alert('Welcome to my Portifolio');
-
 function togglenav() {
     $('nav').toggleClass('open')
 }

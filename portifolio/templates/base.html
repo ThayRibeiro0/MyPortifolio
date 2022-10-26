@@ -11,9 +11,6 @@
     <script src="https://livejs.com/live.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    
-    
     <title>{% block title %}Home{% endblock%}</title>
   
   </head>
@@ -57,43 +54,8 @@
   </nav>
 </header>
 
-  <!-- <body grey>
-
-    <header>
-      <div class="btn-menu" onclick="togglenav()">
-        <i class="material-icons">menu</i>
-      </div>
-
-      <nav>
-        <button class="btn-rounded" red txt-white>
-          <i class="material-icons">home</i>Home
-        </button>
-        <button class="btn-rounded" blue txt-white>
-          <i class="material-icons">face</i>About
-        </button>
-        <button class="btn-rounded" green txt-white>
-          <i class="material-icons">business</i>Job
-        </button>
-        <button class="btn-rounded" style="margin-top: 20px">
-          <i class="material-icons">settings</i>settings
-        </button>
-      </nav>
-    </header> -->
-
     <main>{% block content %}{% endblock %}</main>
-    <!-- <script>
-      var navbar = document.getElementById("navbar");
-      navbar.style.maxHeight = "0px";
-      function togglenav(){
-        if(navbar.style.maxHeight == "0px"){
-          navbar.style.maxHeight = "130px";
-        }
-        else{
-          navbar.style.maxHeight = "0px";
-        }
-      };
-    </script> -->
-
+   
     <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
   </body>
 </html>
